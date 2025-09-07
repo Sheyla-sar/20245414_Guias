@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'HungerGames';
+    src: url('../fonts/HungerGames.ttf') format('truetype');
+}
+
+
+body{
+    background: linear-gradient(to bottom, #f37a4ede, #ee4102ef, #8b0000e3, #1a1a1a);
+}
+
+
+h1#titulo{
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'HungerGames', sans-serif;
+    font-size: 3rem;
+    color: #ffdd57;
+    -webkit-text-stroke: 1px black;
+}
+
+h2#subtitulo{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+p.descripcion {
+    text-align: left; 
+    line-height: 1.6;
+}
+
+p.descripcion span{
+    font-weight: bold;
+}
+
+section {
+    width: 80%;
+    margin: 15px auto;
+    background-color: white;
+    overflow: auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h2.Peliculas{
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(238, 88, 29);
+    font-size: 30px;
+}
+
+.contenedor-pelicula {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; 
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.sinopsis{
+    line-height: 1.6;
+}
+
+.sinopsis h3{
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'HungerGames', sans-serif;
+    font-size: 30px;
+    color: #ffdd57;
+    -webkit-text-stroke: 1px black;
+}
+
+.portada img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+h2.personajes{
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(247, 35, 20);
+    font-size: 30px;
+}
+
+.descripcion-personajes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.descripcion-personajes article {
+    flex: 0 0 32%;     
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: #c3e1e93f;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.descripcion-personajes article img {
+    display: block;
+    margin: 10px auto;
+    width: 200px;        
+    height: 250px;        
+    border-radius: 8px;
+}
+
+.descripcion-personajes article p{
+    line-height: 1.5;
+}
+
+.descripcion-personajes article span{
+    color: rgb(243, 112, 51);
+    font-weight: bold;
+}
+
