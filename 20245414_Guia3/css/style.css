@@ -14,12 +14,22 @@ header{
     background: #16A085;
     height: 130px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 footer{
     margin-top: 20px;
     background: #16A085;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header div, footer div{
@@ -44,6 +54,9 @@ section{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 60px;
 }
 
 section article{
@@ -74,7 +87,8 @@ footer div{
 
 section article:nth-child(2){
     background-color: rgba(70, 130, 180, 0.9);
-    position:static;
+    position: static;
     left: 100px;
     top: 50px;
+    display: none;
 }
