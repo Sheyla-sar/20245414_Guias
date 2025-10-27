@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0c0c0c;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo span {
+    color: #ff5e00;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff5e00;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.descripcion {
+    flex: 1;
+    min-width: 300px;
+}
+
+.descripcion h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.biografia {
+    margin: 20px 0;
+    max-width: 550px;
+}
+
+.socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socials a {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f85c01;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    display: block;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil {
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ff5e00 0%, transparent 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#materia {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sobreMateria {
+    flex: 1;
+    background-color: #0c0c0c;
+    color: #ccc;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobreMateria h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sobreMateria h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sobreMateria p {
+    line-height: 1.6;
+}
+
+.competenciasTexto{
+    flex: 1;
+    background: #ff650b;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.caja {
+    display: flex;
+    align-items: flex-start;
+    background: #ff7e34ee;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.miscompetencias h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #0c0c0c;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.miscompetencias ul li{
+    margin-left: 20px;
+}
+
+#guias {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 60px 10%; 
+}
+
+#guias > h2 {
+    text-align: center;       
+    font-size: 2.2em;
+    margin-bottom: 50px;       
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 2px solid #ff5e00;
+    padding-bottom: 10px;
+    display: block;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guias-tabla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.guia {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2a;
+}
+
+.guia:hover {
+    box-shadow: 0 0 25px rgba(255, 81, 0, 0.15);
+}
+
+.guia h3 {
+    color: #ff5e00;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.guia p {
+    font-size: 0.95em;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.guias-tabla ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.guias-tabla ul h4 {
+    color: #ff5e00;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.guias-tabla a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.guias-tabla a:hover {
+    color: #ff5e00;
+    text-decoration: underline;
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#FODA {
+    padding: 50px 10%;
+    background-color: #0c0c0c;
+}
+
+#FODA h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.Foda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.Foda > div {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.fortalezas {
+    background-color: #4CAF50; 
+}
+
+.oportunidades {
+    background-color: #2196F3; 
+}
+
+.debilidades {
+    background-color: #FF9800; 
+}
+
+.amenazas {
+    background-color: #F44336; 
+}
+
+.Foda h4 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    .Foda {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    #FODA {
+        padding: 40px 5%;
+    }
+
+    .Foda > div {
+        padding: 18px;
+    }
+
+    .Foda h4 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .Foda {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #FODA h2 {
+        font-size: 1.8em;
+    }
+
+    .Foda h4 {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #FODA {
+        padding: 30px 3%;
+    }
+
+    .Foda > div {
+        padding: 15px;
+    }
+
+    .Foda h4 {
+        font-size: 1em;
+    }
+
+    .Foda p {
+        font-size: 0.9em;
+    }
+}
