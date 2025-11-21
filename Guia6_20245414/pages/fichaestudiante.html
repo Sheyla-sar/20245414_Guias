@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fichaestudiante.css">
+    <script type="module" src="../js/fichaestudiante.js" defer></script>
+    <title>Ficha estudiante</title>
+</head>
+
+<body>
+    <h1>Ficha del estudiante</h1>
+    <div class="ficha">
+        <form id="formulario">
+            <div class="datos">
+                <label for="Carnet">Carnet del estudiante:</label>
+                <input type="text" id="Carnet" maxlength="5">
+            </div>
+            <div class="datos">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre">
+            </div>
+            <div class="datos">
+                <label for="Dui">DUI:</label>
+                <input type="text" id="Dui">
+            </div>
+            <div class="datos">
+                <label for="Nit">NIT:</label>
+                <input type="text" id="Nit">
+            </div>
+            <div class="datos">
+                <label for="Fecha">Fecha de nacimiento:</label>
+                <input type="date" id="Fecha" pattern="\d(2)-\d(2)-\d(4)">
+            </div>
+            <div class="datos">
+                <label for="Correo">Correo electronico:</label>
+                <input type="text" id="Correo">
+            </div>
+            <div class="datos">
+                <label for="Edad">Edad:</label>
+                <input type="number" id="Edad" min="0" max="100">
+            </div>
+            <div class="datos">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

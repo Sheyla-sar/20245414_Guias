@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #aad3ee;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.ficha {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(99, 113, 194);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.datos {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+input.valido {
+    border-color: #27ae60;
+    background-color: #f8fff9;
+}
+
+input.invalido {
+    border-color: #e74c3c;
+    background-color: #fff8f8;
+}
+
+.datos button{
+    background-color: #aad3ee;
+    border-radius: 5px;
+    color: black;
+    width: 130px;
+    height: 40px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 200px;
+}

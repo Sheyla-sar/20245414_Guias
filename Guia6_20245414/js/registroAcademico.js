@@ -13,9 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
     let arrayEstudiantes = new Array();
 
     function addEstudiantes(){
-        const inputCarnet = document.querySelector("#inputCarnet").ariaValueMax.toString().toUpperCase();
-        const inputNombre = document.querySelector("#inputNombre").ariaValueMax.toString().toUpperCase();
-        const inputApellidos = document.querySelector("#inputApellidos").ariaValueMax.toString().toUpperCase();
+        const inputCarnet = document
+        .querySelector("#inputCarnet")
+        .value.toString().toUpperCase();
+        const inputNombre = document
+        .querySelector("#inputNombre")
+        .value.toString().toUpperCase();
+        const inputApellidos = document
+        .querySelector("#inputApellidos")
+        .value.toString().toUpperCase();
 
         if(inputCarnet != "" && inputNombre != "" && inputApellidos != ""){
             arrayEstudiantes.push(
